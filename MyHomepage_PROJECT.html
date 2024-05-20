@@ -1,91 +1,185 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ko">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Seo Young</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css">
     <style>
         @font-face {
             font-family: 'Room No.703 OTF';
             src: url('Room No.703 OTF.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        p {
-            font-family: 'Room No.703 OTF', Arial, Helvetica, sans-serif;
-            font-size: 30px;
         }
 
         @font-face {
             font-family: 'Cafe24Ohsquare';
             src: url('Cafe24Ohsquare-v2.0.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        table {
-            font-family: 'Cafe24Ohsquare', Arial, sans-serif;
-            font-size: 30px;
         }
 
         @font-face {
             font-family: 'Cafe24Classictype';
             src: url('Cafe24Classictype-v1.1.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        header {
-            font-family: 'Cafe24Classictype', Arial, sans-serif;
-            font-size: 30px;
-        }
-
-        header {
-            li {
-                font-family: 'Cafe24Classictype', Arial, sans-serif;
-                font-size: 30px;
-            }
         }
 
         @font-face {
             font-family: 'GangwonEdu_OTFBoldA';
             src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
         }
 
-        h1 {
+        body {
+            font-family: 'Cafe24Ohsquare', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header a.title {
+            color: #fff;
+            text-decoration: none;
             font-family: 'Cafe24Classictype', Arial, sans-serif;
-            font-size: 50px;
+            font-size: 36px;
         }
 
         li {
             font-family: 'Cafe24Ohsquare', Arial, sans-serif;
-            font-size: 30px;
         }
 
-        .radius_ProjectPicture1 {
-            border-radius: 50%;
+        nav ul {
+            list-style: none;
+            padding: 0;
         }
 
-        img_ProjectPicture1 {
-			width: 120%;
-			height: auto;
-		}
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-        img_ProjectPicture2 {
-			width: 30%;
-			height: auto;
-		}
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Cafe24Classictype', Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        #wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .wrapper h1.major {
+            font-family: 'Cafe24Classictype', Arial, sans-serif;
+            font-size: 42px;
+            margin-bottom: 0.5em;
+            color: #333;
+            position: relative;
+            padding-bottom: 0.5em;
+        }
+
+        .wrapper h1.major:after {
+            content: "";
+            width: 100px;
+            height: 3px;
+            background: #ff4081;
+            display: block;
+            margin-top: 0.5em;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .wrapper p,
+        .wrapper ul {
+            font-family: 'Room No.703 OTF', Arial, sans-serif;
+            font-size: 20px;
+            line-height: 1.6em;
+            margin-bottom: 1.5em;
+        }
+
+        .wrapper ul {
+            padding-left: 20px;
+        }
+
+        .wrapper ul li {
+            margin-bottom: 0.5em;
+        }
+
+        .wrapper ul li a {
+            color: #ff4081;
+            text-decoration: none;
+        }
+
+        .wrapper ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .wrapper img.project-picture-1 {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            display: block;
+            margin: 0 auto 2em;
+            border-radius: 7%;
+        }
+
+        .wrapper img.project-picture-2 {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto 2em;
+            border-radius: 7%;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        footer a {
+            color: #ff4081;
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5em;
+            font-family: 'Cafe24Ohsquare', Arial, sans-serif;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-size: 20px;
+        }
+
+        table td {
+            font-size: 18px;
+        }
     </style>
 </head>
-</style>
-</head>
 
-<body class="is-preload">
+<body>
     <!-- Header -->
     <header id="header">
         <a href="index.html" class="title">&laquo;&nbsp;&nbsp;서영의&nbsp;&nbsp;홈페이지&nbsp;&nbsp;&raquo;</a>
@@ -100,37 +194,45 @@
 
     <!-- Wrapper -->
     <div id="wrapper">
-
         <!-- Main -->
         <section id="main" class="wrapper">
             <div class="inner">
                 <h1 class="major">My Project&nbsp;&#128209;</h1>
-                <img src="ProjectPicture1.png" style="border-radius: 7%; size: 500px;" /></span>
-                <br>
-                <br>
-                <ul>
-                    <p>&#128153;&nbsp;&nbsp;" 프로젝트의 주제 "&nbsp;&nbsp;&#128153;<br>식재료 기반 맞춤 레시피 제공</p>
-                    <p>&#128153;&nbsp;&nbsp;" 프로젝트의 목적 "&nbsp;&nbsp;&#128153;<br>사용자의 선호도 및 건강 정보에 따른 요리 추천</p>
-                    <p>&#128153;&nbsp;&nbsp;" 필요한 핵심 기술 "&nbsp;&nbsp;&#128153;<br>AI 머신러닝 및 알고리즘을 활용한 맞춤화된 레시피 제공</p>
-                    <p>&#128153;&nbsp;&nbsp;" 프로젝트의 사회적 목표 "&nbsp;&nbsp;&#128153;<br>건강한 식생활 문화 선도 및 음식물 쓰레기 감소</p>
-                </ul>
+                <hr>
+                <img src="ProjectPicture1.png" alt="Project Picture 1" class="project-picture-1" />
+                <table>
+                    <tr>
+                        <th>프로젝트의 주제</th>
+                        <td>식재료 기반 맞춤 레시피 제공</td>
+                    </tr>
+                    <tr>
+                        <th>프로젝트의 목적</th>
+                        <td>사용자의 선호도 및 건강 정보에 따른 요리 추천</td>
+                    </tr>
+                    <tr>
+                        <th>필요한 핵심 기술</th>
+                        <td>AI 머신러닝 및 알고리즘을 활용한 맞춤화된 레시피 제공</td>
+                    </tr>
+                    <tr>
+                        <th>프로젝트의 사회적 목표</th>
+                        <td>건강한 식생활 문화 선도 및 음식물 쓰레기 감소</td>
+                    </tr>
+                </table>
             </div>
         </section>
 
         <section id="main" class="wrapper">
             <div class="inner">
                 <h1 class="major">Project Members&nbsp;&#128101;</h1>
-                <span class="image fit"><img src="ProjectPicture2.png"></span>
-                <!-- Table with personal information -->
+                <img src="ProjectPicture2.png" alt="Project Picture 2" class="project-picture-2">
                 <ul>
-                    <li><a href="https://github.com/tpdus751">박세연</a></li>
-                    <li><a href="https://github.com/sso05098">김범준</a></li>
-                    <li><a href="https://github.com/ljsuuuuuuuu">이지수</a></li>
-                    <li><a href="https://github.com/Je0ngaram">전가람</a></li>
+                    <li><a href="https://github.com/tpdus751">박세연 : 인공지능 담당</a></li>
+                    <li><a href="https://github.com/sso05098">김범준 : 인공지능 담당</a></li>
+                    <li><a href="https://github.com/ljsuuuuuuuu">이지수 : 프론트엔드 담당</a></li>
+                    <li><a href="https://github.com/Je0ngaram">전가람 : 백엔드 담당</a></li>
                 </ul>
             </div>
         </section>
-
     </div>
 
     <!-- Footer -->
@@ -142,7 +244,6 @@
             </ul>
         </div>
     </footer>
-
 </body>
 
 </html>
